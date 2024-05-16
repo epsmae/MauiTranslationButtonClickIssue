@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.Button.ClickIssue.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    
+    <Grid x:Name="TranslationLayout" ColumnDefinitions="10, 10">
+
+        <StackLayout Grid.Column="0" BackgroundColor="Red" >
+            <Button x:Name="TranslateBtn"
+                    Clicked="OnTranslateClicked"
+                    WidthRequest="120"
+                    Text="Translate" />
+
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" BackgroundColor="Blue">
+
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
+
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
